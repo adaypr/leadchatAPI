@@ -11,7 +11,7 @@ CORS(app)
 def get_tasks():
     
     x =  '{ "name":"John", "age":30, "city":"New York"}'    
-    return Response(json.loads(x), mimetype='application/json') 
+    return json.loads(x) 
     
 if __name__ == '__main__':
     app.run(debug=True)
