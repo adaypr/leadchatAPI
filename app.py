@@ -9,7 +9,9 @@ app = Flask(__name__)
 def get_tasks():
     
     x =  '{ "name":"John", "age":30, "city":"New York"}'
-    return json.loads(x)
+    r = make_response( json.loads(x) )
+    r.mimetype = 'application/json'
+    return r 
     
 if __name__ == '__main__':
     app.run(debug=True)
