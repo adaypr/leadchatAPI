@@ -10,8 +10,7 @@ module.exports = function (app) {
 		};
 		console.log(req.body);
 		//console.log('IP: ' + req.connection.remoteAddress)
-		console.log('IPs: ' + req.ip);
-		if(req.body.service=='StandAlone'){			
+		console.log('IPs: ' + req.ip);					
 			res.json({
 				  "data": [
 					{
@@ -24,13 +23,7 @@ module.exports = function (app) {
 					    }
 					  }
 				  ]
-				});	
-		}		
-		else{	
-			res.json({
-				"Error": '201 ERROR'
-				});
-		}
+				});			
 	}catch (e){
 		res.json({
 			"Error Catch": '201 ERROR'
