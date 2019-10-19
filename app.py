@@ -1,5 +1,5 @@
 #!flask/bin/python
-from flask import Flask, jsonify, request, json, make_response
+from flask import Flask, jsonify, request, json, Response
 
 app = Flask(__name__)
 
@@ -8,10 +8,8 @@ app = Flask(__name__)
 @app.route('/leadmessage', methods=['GET'])
 def get_tasks():
     
-    x =  '{ "name":"John", "age":30, "city":"New York"}'
-    r = make_response( json.loads(x) )
-    r.mimetype = 'application/json'
-    return r 
+    x =  '{ "name":"John", "age":30, "city":"New York"}'    
+    return Response(json.loads(x), mimetype='application/json') 
     
 if __name__ == '__main__':
     app.run(debug=True)
