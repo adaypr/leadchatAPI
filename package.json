@@ -1,0 +1,52 @@
+{
+  "name": "apimsip",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adaypr/apimsip.git"
+  },
+  "scripts": {
+    "start": "node src/app.js"
+  },
+  "author": "Aday",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adaypr/apimsip/issues"
+  },
+  "homepage": "https://github.com/adaypr/apimsip#readme",
+  "dependencies": {
+    "accepts": "^1.3.5",
+    "array-flatten": "^2.1.2",
+    "basic-auth": "^2.0.1",
+    "body-parser": "^1.18.3",
+    "content-disposition": "^0.5.3",
+    "cookie": "^0.3.1",
+    "cookie-signature": "^1.1.0",
+    "cryptr": "^4.0.2",
+    "destroy": "^1.0.4",
+    "encoding": "^0.1.12",
+    "etag": "^1.8.1",
+    "express": "^4.16.4",
+    "express-http-context": "^1.2.0",
+    "express-logger-unique-req-id": "^1.0.4",
+    "express-session": "^1.15.6",
+    "finalhandler": "^1.1.1",
+    "fresh": "^0.5.2",
+    "handle": "^1.0.0",
+    "merge-descriptors": "^1.0.1",
+    "methods": "^1.1.2",
+    "middleware": "^1.0.0",
+    "morgan": "^1.9.1",
+    "node-uuid": "^1.4.8",
+    "passport": "^0.4.0",
+    "path-to-regexp": "^3.0.0",
+    "proxy-addr": "^2.0.4",
+    "range-parser": "^1.2.0",
+    "shelljs": "^0.8.3",
+    "utf8": "^3.0.0",
+    "utils-merge": "^1.0.1",
+    "vary": "^1.1.2"
+  }
+}
