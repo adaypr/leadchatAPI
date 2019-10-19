@@ -12,7 +12,7 @@ def get_tasks():
     
     #x =  '{ "name":"John", "age":30, "city":"New York"}'
     x = '{  "data": [    {      "text": "Hello, how are you? This should be a very long message so that we can test how it fit into the screen.",      "reply": false,      "date": "2019-10-19T19:57:45.465Z",      "user": {        "name": "John Doe",        "avatar": "https://i.gifer.com/no.gif"      }    }  ]}'
-    return json.dumps(x) 
+    return json.loads(x) 
     
 if __name__ == '__main__':
     app.run(debug=True)
