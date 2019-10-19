@@ -10,8 +10,8 @@ module.exports = function (app) {
 		  Service_Name : req.body.service,
 		};		
 			res.json({
-				"data": [
-				  {
+				  "data": [
+				    {
 				    "text": "Hello, how are you? This should be a very long message so that we can test how it fit into the screen.",
 				    "reply": false,
 				    "date": new Date(),
@@ -28,8 +28,8 @@ module.exports = function (app) {
 				      "name": "Aday Perera",
 				      "avatar": "https://i.gifer.com/no.gif",
 				    }  
-				]});	
-		
+				  ]
+				});											
 	}catch (e){
 		res.json({
 			"Error Catch": '201 ERROR'
