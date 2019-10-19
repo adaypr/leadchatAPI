@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 
 
 // routers
-require('./routes/QuotationMockUpRoutes')(app);
+require('./routes/messagesChatRoutes')(app);
 
 app.listen(app.get('port'), () => {
    console.log('server on port 3000');
