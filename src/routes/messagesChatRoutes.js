@@ -3,14 +3,12 @@ let logger = express_logger.getLogger();
 const uuid = require('node-uuid');
 
 module.exports = function (app) {
-  app.post('/mSIPQuotation', async function(req, res) {
+  app.get('/chatmessages', async function(req, res) {
 	try{
 		const OrderData = {
 		  Service_Name : req.body.service,
 		};
-		console.log(req.body);
-		//console.log('IP: ' + req.connection.remoteAddress)
-		console.log('IPs: ' + req.ip);					
+		console.log(req.body);				
 			res.json({
 				  "data": [
 					{
