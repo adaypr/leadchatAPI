@@ -9,7 +9,7 @@ module.exports = function (app) {
 		const OrderData = {
 		  Service_Name : req.body.service,
 		};		
-			res.json([
+			res.json({[
 				  {
 				    text: 'Hello, how are you? This should be a very long message so that we can test how it fit into the screen.',
 				    reply: false,
@@ -27,7 +27,7 @@ module.exports = function (app) {
 				      name: 'Aday Perera',
 				      avatar: 'https://i.gifer.com/no.gif',
 				    }  
-				]);	
+				]});	
 		
 	}catch (e){
 		res.json({
