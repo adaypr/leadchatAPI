@@ -8,7 +8,8 @@ module.exports = function (app) {
 		const OrderData = {
 		  Service_Name : req.body.service,
 		};
-		console.log(req.body);				
+		console.log(req.body);	
+		res.setHeader('Content-Type', 'application/json');
 			res.json({
 				  "data": [
 					{
