@@ -8,7 +8,7 @@ from datetime import datetime
 app = Flask(__name__)
 CORS(app)
 #socketio = SocketIO(app)
-socketio = SocketIO(app, cors_allowed_origins="*", engineio_logger=True)
+socketio = SocketIO(app, cors_allowed_origins="*", engineio_logger=True, pingInterval = 10000000, pingTimeout= 5000000)
 
 @socketio.on('connect')
 def test_connect():	
